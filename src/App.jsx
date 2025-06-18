@@ -117,8 +117,12 @@ function App() {
   }, [grid])
   return (
     <>
+      <h1 className='four-colors-title'>Coloring Puzzle</h1>
+      <div>
+        <p>Color each region on the grid using only 4 colors. No two adjacent regions (sharing a border) can have the same color.</p>
+      </div>
       <main className='four-colors-main' style={{ cursor: `url(/${currColor}.png) 2 2,auto` }}>
-        <h1 className='four-colors-title'>Four colors</h1>
+
         {solved && <h2 className='four-colors-solved'>Solved</h2>}
         <div className='grid-scroll-container'>
           <div className="four-colors-grid" style={{ gridTemplateRows: `repeat(${n}, 50px)`, gridTemplateColumns: `repeat(${n}, 50px)` }}>
@@ -190,8 +194,8 @@ function App() {
             e.preventDefault();
             setN(formValue)
           }}>
-            <input className='four-colors-input' type="number" max={20} name="size" id="size" value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder='Enter grid Size(max 20)' />
-            <button className='four-colors-button'>Set</button>
+            <input  className='four-colors-input' type="number" min={5} max={20} name="size" id="size" value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder='Enter grid Size(max 20)' />
+            <button className='four-colors-button'>Resize</button>
           </form>
         </div>
       </main>
