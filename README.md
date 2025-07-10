@@ -1,12 +1,38 @@
-# React + Vite
+# 🖍️ Four Colors Puzzle – Game Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend game interface** for the **Four Colors Puzzle**, a map coloring game based on the classic **Four Color Theorem**. The goal is to color each region of a randomly generated map using **only four colors**, ensuring that **no two adjacent regions share the same color**.
 
-Currently, two official plugins are available:
+This React-based web app includes features like dynamic puzzle generation, difficulty selection, undo actions, and solution reveal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [https://fourcolors-mu.vercel.app/](https://fourcolors-mu.vercel.app/)
+
+---
+
+## 🧩 Features
+
+- 🎨 Interactive map coloring interface with smooth UX
+- 🧠 Puzzle validation: ensures correct coloring with visual feedback
+- 🔄 Puzzle refresh: loads a new randomly generated puzzle each time
+- ⏪ Undo option to revert color selections
+- 👀 Solution reveal to check the correct coloring
+
+---
+
+## 🧪 How to Run (Frontend Only)
+
+```bash
+# Clone the repository
+git clone https://github.com/ccl-iitgn/four_colors.git
+cd four_colors
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# → App runs at http://localhost:5173/
